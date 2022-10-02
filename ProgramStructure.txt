@@ -1,0 +1,138 @@
+"div" : b'iVBORw0KGgoAAAANSUhEUgAAAA4AAAASCAYAAABrXO8xAAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjUuMiwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy8qNh9FAAAACXBIWXMAAA9hAAAPYQGoP6dpAAAAeUlEQVR4nN2TMQrAIAxFf0pP4Bk8hnf3BM4ugkcQZ4ffpbaLikgLpQ8yJeEn/ERIEgtsK01/ahQRiMizivso6b3vT1N9LKUg5zylppQCeGKtJYCpiDHyUkwpwTk3pWiMuUdtEUIAAGit+zu2qFa0St6xY/Q4H7vVEQcdNkQ+deF9GQAAAABJRU5ErkJggg==',
+"eqdef" : b'iVBORw0KGgoAAAANSUhEUgAAAA4AAAASCAYAAABrXO8xAAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjUuMiwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy8qNh9FAAAACXBIWXMAAA9hAAAPYQGoP6dpAAABCElEQVR4nM2SsWqEQBRF72o6K5UVFFsR1E9wa2u/yD8Qeyth/QLZymL1K8TWQl22UUSmEJwUGyTGBIykyIVp3sx5977HnCilFAfEHIF+BNu2RRAEq1rXdXAcB1mWAQDevl5GUQSGefW73W5omgaSJIEQAk3TYJrmFozjGK7rghCCJEngeR4sy0JZlgjDEIQQnM/nLSgIAuq6xjiOYFkWl8sFvu9jGAZUVbWKfvq81Xmecb1eIYoiFEUBx3FI0xSqqsK2bTweDxiG8XpMP3S/3ymAXacoCrpE1XUdYRh+t+SNZFleR/2NFsfn84k8z3dBjuMcn3GJOk0T+r7f5cjz/PEZ//aT/0/wHe/PltG3295kAAAAAElFTkSuQmCC',
+vergelijkingen = ['Doteq', 'Equiv', 'approx', 'approxeq',  'circeq', 'cong', 'curlyeqprec', 'curlyeqsucc', 'doteq', 'doteqdot', 'eqdef', 'eqsim', 'equiv', 'geq', 'geqq', 'ggg', 'gnapprox', 'gneqq', 'gnsim', 'gtrapprox', 'gtrsim', 'leq', 'leqq', 'lessapprox', 'lesseqgtr', 'lll', 'lnapprox', 'lneqq', 'napprox', 'ncong', 'ne', 'neg', 'neq', 'nequiv', 'ngeq', 'nleq', 'nless', 'nmid', 'nprec', 'nsim', 'nsucc',  'prec', 'preccurlyeq', 'preceq', 'precnsim', 'precsim', 'propto', 'questeq', 'sim', 'succ', 'succeq']
+class Pdf_viewer:
+    def __init__(self):
+    def get_print_path(self):
+    def get_path(self):
+    def get_page(self, page_number):
+    def initialize_labels(self):
+    def run(self):
+    def make_page_image(self, page_number, zoom):
+    def create_empty_image(self):
+    def get_page_image_list(self):
+    def _on_mousewheel(self, event):
+    def page_is_changed(self):
+    def validate(self, event):
+    def detect_page_change(self):
+    def add_pagebox(self,root):
+    def move_to_page(self, page_number):
+    def get_row(self):
+    def run_program(self):
+    def make_widgets(self):
+    def make_downbar(self, root):
+    def schaal_move(self,event):
+    def make_scale(self, root):
+    def make_positive(self, n,m):
+    def make_menubar(self):
+    def make_toolbar(self):
+    def print_pdf_doc_verify(self):
+    def verify(self, command):
+    def get_y(self,pn):
+    def make_canvas(self):
+    def scrollbarcommand(self, event, val):
+    def make_scrollbar(self, root, fill):
+    def set_zoom(self, perc):
+    def prepare_frames(self, row, zoom):
+    def update_frames(self):
+    def create_window(self, page_number):
+    def allowed_row(self, page_number,row):
+    def remove_redundant(self, page_number):
+    def put_photoimage_in_list(self, img, page_number, labels_image):
+    def set_image(self, page_number):
+    def save(self):
+    def save_info(self, string, name):
+    def temp(self):
+    def on_closing(self):
+    def get_save_string(self):
+    def y_cursor(self):
+    def cursor_page_number(self):
+    def create_latex_widget(self, event = None):
+    def position_latex_widget(self, widget, event):
+    def update_latex_widget_positions(self, page_number):
+    def create_click_feature(self, label):
+    def create_text_strings_list(self):
+    def decode_save(self,name):
+    def load_latex_widget_from_string(self, page_number, i):
+    def make_int(self, num):
+    def load_widgets_on_page(self, page_number, zoom=None):
+    def remove_widgets_on_page(self, page_number, zoom=None):
+    def make_line(self):
+    def print_pdf_page(self, page_num, temp_doc):
+    def print_pdf_doc(self):
+    def set_fontsize(self, new):
+class view_box:
+    def __init__(self,textmanager, text, start, bef1=False, beh1=False, beh2=False):
+    def calculate_children(self):
+class Textmanager:
+    def __init__(self):
+    def clean_string(self, str, char):
+    def replace_symbols_in_text(self, input,transitions):
+    def check_for_matrix(self, temp_str,transitions):
+    def make_matrix(self, n_rows,n_cols, brackets):
+    def is_valid_to_continue(self, char):
+    def add_while_digit(self, i, sign, text, end = -1):
+    def make_frac(self, text, sym = "/", transitions = {}):
+    def frac_pair(self,pair, text,sym,  transitions):
+    def fix_text(self, text):
+    def replace_useless(self,text):
+    def find_end_bracket(self,text, start, symbol = ["(", ")"]):
+    def get_score(self,char, symbol):
+    def replace_bracket_function(self, func, text, transitions):
+    def get_more_transitions(self, text, transitions):
+    def find_all(self, text,search):
+class Symbol_button:
+    def __init__(self, parent, code, root):
+    def on_enter(self, event):
+    def on_leave(self, event):
+    def button_clicked(self):
+    def create_button(self, img, parent):
+    def create_image(self, code):
+    def destroy(self):
+    """def create_image(self, code):
+class Symbol_control_center:
+    def __init__(self, root, parent, root2):
+    def make_categories(self):
+class Symbol_Category():
+    def __init__(self, name, code_list, cc):
+    def create_button(self):
+    def destroy(self):
+    def open_symbols(self):
+    def destroy_all(self):
+class Latex_Widget():
+    def __init__(self, textmanager,pdfv, page_number, fontsize=20, is_active = False):
+    def resize(self, zoom):
+    def revive(self):
+    def place_revive(self, x,y):
+    def leave_revive(self, event= None):
+    def entered_widget(self, event):
+    def copy(self, event):
+    def move(self, event):
+    def get_xy(self, root):
+    def left_widget(self, event):
+    def destroy_(self, event):
+    def activate_entry(self):
+    def make_transparent(self):
+    def set_fontsize(self, fontsize):
+    def normalize(self,n, m,s):
+    def set_frame_pos(self, x,y, move=False):
+    def make_active(self, event, new=False):
+    def make_inactive(self):
+    def create_latex_textbox(self):
+    def place_entry(self):
+    def create_entry(self):
+    def resize_entry(self,entry_text):
+    def process_input(self, text, event=None):
+    def make_text(self,string):
+    def get_input(self):
+    def update_input(self):
+    def graph(self, event=None):
+    def insert_bracket(self):
+    def set_text(self, str):
+    def return_data(self, zoom):
+    def convert_buf(self,buf):
+    def make_sub_figures(self):
+    def fig2img(self):
+    def get_rect(self):
+    def split_parts(self, text, symbols = [" "]):
+def main():
